@@ -2,6 +2,7 @@
 
 
 ## 1. Arithmatic & Logical Unit (ALU)
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/d5b5bb07-8bea-4204-b1c1-3d5c272932dd)
 
 
 
