@@ -56,6 +56,19 @@ Add label with PC and go to that mem location.
 
 ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/2e4b0cdd-3268-4b3b-b165-1bbe895416c9)
 
+## 3. Instruction Memory
+> Assembly Code --> Machine Code --> Instruction Memory
+
+It takes a 32-bit instruction address input, A, and reads the 32-bit data (i.e., instruction) from that address onto the read data output, RD.
+
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/c9e4bec8-00d5-4931-acc2-2a1e73090c4a)
+
+## 4. Program Counter (PC)
+32-bit register. Its output, PC, points to the current instruction. 
+
+Its input, PCNext, indicates the address of the next instruction
+
+## 5. General Purpose Register (GPR)
 
 
 #### References:  
