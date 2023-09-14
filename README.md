@@ -52,6 +52,8 @@ Add label with PC and go to that mem location.
 ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/c9d96552-ef52-4551-82ba-dad9a724705f)
 
 ### ALU decoder table
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/74751234-420e-4977-b9fd-a895df8d47ec)
+
 ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/2e4b0cdd-3268-4b3b-b165-1bbe895416c9)
 
 
