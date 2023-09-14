@@ -1,10 +1,10 @@
 # RISC-V_Processor
 
 
-## * Register Bank
-![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/ba93062f-e048-43d4-9c9d-a7100d3909c3)
+## Register Bank
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/562fb2b7-1c1f-4a10-ac58-30b8d83a7e06)
 
-## * Instructions types
+## Instructions types
 ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/54c75776-6c32-4d31-b202-e81301bcee21)
 
 ### 1. R-Type (Ex. ADD R1, R2, R3)
