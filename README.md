@@ -69,7 +69,10 @@ It takes a 32-bit instruction address input, A, and reads the 32-bit data (i.e.,
 Its input, PCNext, indicates the address of the next instruction
 
 ## 5. General Purpose Register (GPR)
-
+  * 32-element × 32-bit register file
+  * 2-Read port, 1-Write port
+  * A1[4:0] -> RD1, A2[4:0] -> RD2, A3[4:0] -> WD3
+  * 5-bit addr -> 2^5=32 
 
 #### References:  
 1. [link1](https://github.com/merldsu/RISCV_Single_Cycle_Core/tree/main)
