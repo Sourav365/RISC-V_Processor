@@ -14,13 +14,24 @@
 ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/ba93062f-e048-43d4-9c9d-a7100d3909c3)
 
 ## 3. Instructions Decoding
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/54c75776-6c32-4d31-b202-e81301bcee21)
+
 ### 1. R-Type (Ex. ADD R1, R2, R3)
+Opcode is same for a particular type of instruction.
+
 ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/24dd6fe9-1688-4098-8a0a-e15e3db84380)
 ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/4ae5d103-9cc2-411b-85f9-a0e8e65b6e08)
 
-### 2. I-Type
+### 2. I-Type (Ex. ADDI R1,R2,50) 
+All Immediate + Load Instruction
+LW R20, offset(Base) --> LW R20,82(R7)
 
-### 3. S-Type
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/a6d75433-7a32-43c4-9d3c-101f4d43f76c)
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/76a2474f-123b-44bc-8706-4bb543335abb)
+
+
+### 3. S-Type (Ex. 
+
 
 ### 4. B-Type
 
