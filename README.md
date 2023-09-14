@@ -79,6 +79,23 @@ It takes a 32-bit instruction address input, A, and reads the 32-bit data (i.e.,
   * WE = 1, write to addr A @posedge clk
   * WE = 0, read from addr A
 
+## 7. Data-path Design
+### Step-1. Data-path for I-type instruction
+
+
+
+
+### Step-2. Data-path for S-type instruction
+
+
+
+
+### Step-3. Data-path for R-type instruction
+
+
+
+
+
 #### References:  
 1. [link1](https://github.com/merldsu/RISCV_Single_Cycle_Core/tree/main)
 2. [link2](https://github.com/merldsu/RISCV_Single_Cycle_Core/blob/main/doc/RISCV_Single_Cycle_Microarchitecture.pdf)
