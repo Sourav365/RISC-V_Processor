@@ -56,23 +56,28 @@ Add label with PC and go to that mem location.
 
 ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/2e4b0cdd-3268-4b3b-b165-1bbe895416c9)
 
-## 3. Instruction Memory
+## 3. Program Counter (PC)
+32-bit register. Its output, PC, points to the current instruction. 
+
+Its input, PCNext, indicates the address of the next instruction
+
+## 4. General Purpose Register (GPR)
+  * 32-element × 32-bit register file
+  * 2-Read port, 1-Write port
+  * A1[4:0] -> RD1, A2[4:0] -> RD2, A3[4:0] -> WD3
+  * 5-bit addr -> 2^5=32 
+
+## 5. Instruction Memory
 > Assembly Code --> Machine Code --> Instruction Memory
 
 It takes a 32-bit instruction address input, A, and reads the 32-bit data (i.e., instruction) from that address onto the read data output, RD.
 
 ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/c9e4bec8-00d5-4931-acc2-2a1e73090c4a)
 
-## 4. Program Counter (PC)
-32-bit register. Its output, PC, points to the current instruction. 
-
-Its input, PCNext, indicates the address of the next instruction
-
-## 5. General Purpose Register (GPR)
-  * 32-element × 32-bit register file
-  * 2-Read port, 1-Write port
-  * A1[4:0] -> RD1, A2[4:0] -> RD2, A3[4:0] -> WD3
-  * 5-bit addr -> 2^5=32 
+## 6. Data Memory
+  * 1-Read, 1-Write port
+  * WE = 1, write to addr A @posedge clk
+  * WE = 0, read from addr A
 
 #### References:  
 1. [link1](https://github.com/merldsu/RISCV_Single_Cycle_Core/tree/main)
