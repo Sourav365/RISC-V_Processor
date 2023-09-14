@@ -42,19 +42,19 @@ Add label with PC and go to that mem location.
 ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/882c35a5-1b08-4807-85ca-58e542070186)
 
 ### Result of ALU test
-![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/68a7297c-edb9-4512-884b-8ad6f5628795)
+   ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/68a7297c-edb9-4512-884b-8ad6f5628795)
 
 
 ## 2. Control Unit/ Decoder
-![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/383b6d54-bd83-4004-930b-495e3a01f058)
+   ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/383b6d54-bd83-4004-930b-495e3a01f058)
 
 ### Main decoder table
-![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/c9d96552-ef52-4551-82ba-dad9a724705f)
+   ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/c9d96552-ef52-4551-82ba-dad9a724705f)
 
 ### ALU decoder table
-![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/74751234-420e-4977-b9fd-a895df8d47ec)
+   ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/74751234-420e-4977-b9fd-a895df8d47ec)
 
-![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/2e4b0cdd-3268-4b3b-b165-1bbe895416c9)
+   ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/2e4b0cdd-3268-4b3b-b165-1bbe895416c9)
 
 ## 3. Program Counter (PC)
 32-bit register. Its output, PC, points to the current instruction. 
@@ -73,7 +73,7 @@ Its input, PCNext, indicates the address of the next instruction
 
 It takes a 32-bit instruction address input, A, and reads the 32-bit data (i.e., instruction) from that address onto the read data output, RD.
 
-![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/c9e4bec8-00d5-4931-acc2-2a1e73090c4a)
+   ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/c9e4bec8-00d5-4931-acc2-2a1e73090c4a)
 
 ## 6. Data Memory
   * 1-Read, 1-Write port
@@ -81,17 +81,38 @@ It takes a 32-bit instruction address input, A, and reads the 32-bit data (i.e.,
   * WE = 0, read from addr A
 
 ## 7. Data-path Design
-### Step-1. Data-path for I-type instruction
+### Part-1. Data-path for I-type instruction
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/590f7ff9-2f67-40b4-af00-b16092d081eb)
+
+ * 5-sections:
+    1. Opcode
+    2. Destination reg
+    3. function-3
+    4. Source reg
+    5. Immediate value
+  
+ * Zero/Sign extension in Immediate bit..................
+ * kj
+
+   
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/af274291-53a6-4158-b443-3e717f7f8bcb)
+
+ * To read instruction from Instruction Mem.
+ * PC indicates the address of Instruction in Instruction Mem.
+   
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/d5bc201d-0e69-42fa-824d-7cfe4538ab0a)
+
+ * For I-type instruction,
+ * A1 -> Address of rs1 = instruction[19:15]
+ * A3 -> Address of rd  = instruction[11:7]
+
+
+### Part-2. Data-path for S-type instruction
 
 
 
 
-### Step-2. Data-path for S-type instruction
-
-
-
-
-### Step-3. Data-path for R-type instruction
+### Part-3. Data-path for R-type instruction
 
 
 
