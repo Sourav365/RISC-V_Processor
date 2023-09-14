@@ -30,10 +30,17 @@ LW R20, offset(Base) --> LW R20,82(R7)
 ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/76a2474f-123b-44bc-8706-4bb543335abb)
 
 
-### 3. S-Type (Ex. 
+### 3. S-Type (Ex. SW R8,78(R11))
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/7133178c-e993-4203-85d3-ac3047a5c835)
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/ea6cb054-554a-4969-803f-b0e03b3e2cb6)
 
 
-### 4. B-Type
+### 4. B-Type (BRANCH) (Ex. BEQ R1,R6,label)
+Add label with PC and go to that mem location.
+
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/534f0f80-f5ee-4753-aa4c-a689f62ba03d)
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/6f84d486-b768-45e2-aa88-54158f1b5ea7)
+
 
 
 
