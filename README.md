@@ -65,6 +65,7 @@ Its input, PCNext, indicates the address of the next instruction
   * 32-element × 32-bit register file
   * 2-Read port, 1-Write port
   * A1[4:0] -> RD1, A2[4:0] -> RD2, A3[4:0] -> WD3
+  * During decoding, A1-> Address of rs1 (source reg-1), A2-> Address of rs2 (source reg-2), A3-> Address of rd (destination reg)
   * 5-bit addr -> 2^5=32 
 
 ## 5. Instruction Memory
