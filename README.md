@@ -90,10 +90,6 @@ It takes a 32-bit instruction address input, A, and reads the 32-bit data (i.e.,
     3. function-3
     4. Source reg
     5. Immediate value
-  
- * Zero/Sign extension in Immediate bit..................
- * kj
-
    
 ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/af274291-53a6-4158-b443-3e717f7f8bcb)
 
@@ -106,6 +102,29 @@ It takes a 32-bit instruction address input, A, and reads the 32-bit data (i.e.,
  * A1 -> Address of rs1 = instruction[19:15]
  * A3 -> Address of rd  = instruction[11:7]
 
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/41fe55d0-059e-4fd6-a7b7-a7637493dde9)
+
+   * 12-bit immediate input should be signed extended to 32-bits.
+  
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/e30c67f1-9a7a-44c3-b779-87bc80c1f1bc)
+
+   * ALU srcA -> Source reg-1
+   * ALU srcB -> Immediate data
+   * For load instruction, alu_control = 000, to add Base + Offset = Effective Addr
+
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/72dfc3ed-3526-4cc6-96f5-b02b9b2588c6)
+
+   * ALU Result = Effective Addr -> Goes to Address line of Data Mem
+   * Read data from Data Mem and write to destination reg of GPR. A3 -> Address of rd  = instruction[11:7]
+   * Control signal RegWrite becomes = 1
+   * Write happens @posedge clk
+   * One instruction is complete
+
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/55e7cd6e-a82c-4d65-9927-4fd05c4eb81c)
+
+   * One instruction is complete
+   * The processor must compute the address of the next instruction
+   * PC <= PC + 4 @posedge clk
 
 ### Part-2. Data-path for S-type instruction
 
