@@ -127,8 +127,24 @@ It takes a 32-bit instruction address input, A, and reads the 32-bit data (i.e.,
    * PC <= PC + 4 @posedge clk
 
 ### Part-2. Data-path for S-type instruction
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/0cc3fca7-2880-4625-90b9-ba57854f2cde)
 
+ * 6-sections:
+    1. Opcode
+    2. imm[4:0]
+    3. function-3
+    4. Source reg-1
+    5. Source reg-2
+    6. Immediate value[11:5]
 
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/5fd0b505-314e-415e-bd89-593f43980589)
+
+   * Depending on ImmSrc, extend the value of immediate value.
+   * Connect other control signals -> ImmSrc, MemWrite
+   * GPR -> A2 = Instr[24:20]
+   * Connect WriteData
+
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/9daf1a5b-f6a7-45a5-8a2e-df174596e013)
 
 
 ### Part-3. Data-path for R-type instruction
