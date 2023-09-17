@@ -148,7 +148,22 @@ It takes a 32-bit instruction address input, A, and reads the 32-bit data (i.e.,
 
 
 ### Part-3. Data-path for R-type instruction
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/5a6e4238-07a5-49a7-9644-ddb4b4547ae5)
 
+ * 6-sections:
+    1. Opcode
+    2. Destination Reg
+    3. function-3
+    4. Source Reg-1
+    5. Source Reg-2
+    6. function-7
+       
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/cdf9ff41-ef9e-4dcd-bd58-5ab2842538a8)
+
+   * Add MUX-1 to select ImmExt or RD2 for I-type and R-type instructions.
+   * Add MUX-2 to select ReadData or ALUResult for I-type (Load) and R-type instructions.
+
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/e37563be-e35c-452a-96b9-742ab360aad5)
 
 
 
