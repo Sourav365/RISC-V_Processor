@@ -162,7 +162,6 @@ It takes a 32-bit instruction address input, A, and reads the 32-bit data (i.e.,
    * Add MUX-1 to select ImmExt or RD2 for I-type and R-type instructions.
    * Add MUX-2 to select ReadData or ALUResult for I-type (Load) and R-type instructions.
 
-![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/e37563be-e35c-452a-96b9-742ab360aad5)
 
 ## Test-1: LW x6, -4(x9) --> 0xFFC4A303
    * Imm = -4
