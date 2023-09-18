@@ -163,7 +163,12 @@ It takes a 32-bit instruction address input, A, and reads the 32-bit data (i.e.,
    * Add MUX-2 to select ReadData or ALUResult for I-type (Load) and R-type instructions.
 
 
-## Test-1: LW x6, -4(x9) --> 0xFFC4A303
+## RTL Schamatic
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/af9761d9-a698-451c-beb6-db87df564860)
+
+
+## RTL Verification
+### Test-1: LW x6, -4(x9) --> 0xFFC4A303
    * Imm = -4
    * A1  = 9 (Source)
    * A3  = 6 (Destination)
@@ -176,7 +181,7 @@ It takes a 32-bit instruction address input, A, and reads the 32-bit data (i.e.,
 ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/65d59c8f-7442-45f9-a9bf-fc709d795d4e)
 
 
-## Test-2: ADDI x5, x0, 0x5 --> 0x00500293
+### Test-2: ADDI x5, x0, 0x5 --> 0x00500293
    * Imm = 5
    * A1  = 0 (Source)
    * A3  = 5 (Destination)
@@ -187,12 +192,12 @@ It takes a 32-bit instruction address input, A, and reads the 32-bit data (i.e.,
 
 ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/1b2bb9d2-c795-419d-90c3-16f023221ed3)
 
-## Test-3: 
+### Test-3: 
    * mem[0] = ADDI x5, x0, 0x5 --> 0x00500293
    * mem[4] = ADDI x6, x0, 0x4 --> 0x00400313
 ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/5991eff0-801e-4fd2-82c6-842fa19ac744)
 
-## Test-4: SW x6 8(x9) --> 0x0064_A423
+### Test-4: SW x6 8(x9) --> 0x0064_A423
    * Imm = 8
    * A1  = 9 (Source-1)
    * A2  = 6 (Source-2)
@@ -204,7 +209,7 @@ It takes a 32-bit instruction address input, A, and reads the 32-bit data (i.e.,
 
 ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/3444018f-a0ef-400f-988c-9ca0ac25a2ea)
 
-## Test-5: OR x4, x5, x6 --> 0x0062_E233
+### Test-5: OR x4, x5, x6 --> 0x0062_E233
    * A1  = 5 (Source-1)
    * A2  = 6 (Source-2)
    * A3  = 4 (Destination)
@@ -215,7 +220,7 @@ It takes a 32-bit instruction address input, A, and reads the 32-bit data (i.e.,
    * So, here all datas are available before (Combinational ckt). Only Writing at GPR happens at 1 clk.
 ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/cb686f91-2387-4d45-ba4e-702739f8cebe)
 
-## Test-6:
+### Test-6:
   * mem[0] = ADDI x5, x0, 0x5 --> 0x0050_0293;
   * mem[4] = ADDI x6, x0, 0x4 --> 0x0040_0313;
   * mem[8] = OR   x7, x5, x6  --> 0x0062_E3B3;
@@ -223,7 +228,7 @@ It takes a 32-bit instruction address input, A, and reads the 32-bit data (i.e.,
 
 ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/0e184847-3784-4e11-b02f-5ed2fb7176b6)
 
-## Test-7: Using .txt file as input
+### Test-7: Using .txt file as input
 ```$readmemh("memfile.txt",uut.instruc_mem.mem);```
 
 Content of "memfile.txt"
@@ -237,8 +242,15 @@ Content of "memfile.txt"
 ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/0e184847-3784-4e11-b02f-5ed2fb7176b6)
 
 
+
 #### References:  
 1. [link1](https://github.com/merldsu/RISCV_Single_Cycle_Core/tree/main)
 2. [link2](https://github.com/merldsu/RISCV_Single_Cycle_Core/blob/main/doc/RISCV_Single_Cycle_Microarchitecture.pdf)
 3. [link3](https://www.youtube.com/playlist?list=PL5AmAh9QoSK7Fwk9vOJu-3VqBng_HjGFc)
 4. [link4](https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf)
+
+
+# Physical Design of RISC-V processor
+
+## 1. Synthesis
+
