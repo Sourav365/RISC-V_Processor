@@ -188,7 +188,10 @@ It takes a 32-bit instruction address input, A, and reads the 32-bit data (i.e.,
 
 ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/1b2bb9d2-c795-419d-90c3-16f023221ed3)
 
-
+## Test-3: 
+   * mem[0] = ADDI x5, x0, 0x5 --> 0x00500293
+   * mem[4] = ADDI x6, x0, 0x4 --> 0x00400313
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/5991eff0-801e-4fd2-82c6-842fa19ac744)
 
 
 #### References:  
