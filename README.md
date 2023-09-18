@@ -144,7 +144,6 @@ It takes a 32-bit instruction address input, A, and reads the 32-bit data (i.e.,
    * GPR -> A2 = Instr[24:20]
    * Connect WriteData
 
-![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/9daf1a5b-f6a7-45a5-8a2e-df174596e013)
 
 
 ### Part-3. Data-path for R-type instruction
@@ -179,15 +178,15 @@ It takes a 32-bit instruction address input, A, and reads the 32-bit data (i.e.,
 
 
 ## Test-2: ADDI x5, x0, 0x5 --> 0x00500293
-   * Imm = -4
-   * A1  = 9 (Source)
-   * A3  = 6 (Destination)
-   * Effective addr = [x9] - 4 = 24 - 4 = 20
-   * Datamem[20] = 50
-   * [x6] = 50
+   * Imm = 5
+   * A1  = 0 (Source)
+   * A3  = 5 (Destination)
+   * alu_result = 5 + 0 = 5
+   * [x5] = 5
    * PC, Data write at GPR and data mem are dependds on clk.
    * So, here all datas are available before (Combinational ckt). Only Writing at GPR happens at 1 clk.
 
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/1b2bb9d2-c795-419d-90c3-16f023221ed3)
 
 
 
