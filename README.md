@@ -223,7 +223,20 @@ It takes a 32-bit instruction address input, A, and reads the 32-bit data (i.e.,
 
 ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/0e184847-3784-4e11-b02f-5ed2fb7176b6)
 
-     
+## Test-7: Using .txt file as input
+```$readmemh("memfile.txt",uut.instruc_mem.mem);```
+
+Content of "memfile.txt"
+
+```
+@0  00500293	//ADDI x5, x0, 0x5
+@4  00400313	//ADDI x6, x0, 0x4
+@8  0062E3B3	//OR   x7, x5, x6
+@C  0062F433	//AND  x8, x5, x6
+```
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/0e184847-3784-4e11-b02f-5ed2fb7176b6)
+
+
 #### References:  
 1. [link1](https://github.com/merldsu/RISCV_Single_Cycle_Core/tree/main)
 2. [link2](https://github.com/merldsu/RISCV_Single_Cycle_Core/blob/main/doc/RISCV_Single_Cycle_Microarchitecture.pdf)
