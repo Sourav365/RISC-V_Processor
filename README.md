@@ -193,6 +193,15 @@ It takes a 32-bit instruction address input, A, and reads the 32-bit data (i.e.,
    * mem[4] = ADDI x6, x0, 0x4 --> 0x00400313
 ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/5991eff0-801e-4fd2-82c6-842fa19ac744)
 
+## Test-4: SW x6 8(x9) --> 0x0064_A423
+   * Imm = 8
+   * A1  = 9 (Source-1)
+   * A2  = 6 (Source-2)
+   * Effective addr = [x9] + 8 = 20 + 8 = 28
+   * [x6] = 10
+   * Data_mem[28] = ? = 10 = [x6]
+   * PC, Data write at GPR and data mem are dependds on clk.
+   * So, here all datas are available before (Combinational ckt). Only Writing at GPR happens at 1 clk.
 
 #### References:  
 1. [link1](https://github.com/merldsu/RISCV_Single_Cycle_Core/tree/main)
