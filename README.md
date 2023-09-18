@@ -212,10 +212,17 @@ It takes a 32-bit instruction address input, A, and reads the 32-bit data (i.e.,
    * [x5] = 6, [x6] = 10
    * ALU_result = Result = 6 | 10 = 14
    * [x4] = ? = 14
-   * 
    * PC, Data write at GPR and data mem are dependds on clk.
    * So, here all datas are available before (Combinational ckt). Only Writing at GPR happens at 1 clk.
 ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/cb686f91-2387-4d45-ba4e-702739f8cebe)
+
+## Test-6:
+  * mem[0] = ADDI x5, x0, 0x5 --> 0x0050_0293;
+  * mem[4] = ADDI x6, x0, 0x4 --> 0x0040_0313;
+  * mem[8] = OR   x7, x5, x6  --> 0x0062_E3B3;
+  * mem[12]= AND  x8, x5, x6  --> 0x0062_F433;
+
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/0e184847-3784-4e11-b02f-5ed2fb7176b6)
 
      
 #### References:  
