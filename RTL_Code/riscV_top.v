@@ -35,7 +35,7 @@ module riscV_top #(parameter N=32)(
     control_unit control_unit(
     .opcode(instr[6:0]),
     .funct3(instr[14:12]),
-    .funct7(),//instr[31:25]),    
+    .funct7(instr[31:25]),    
     .ResultSrc(ResultSrc),
     .MemWrite(MemWrite),
     .ALUSrc(ALUSrc),

@@ -33,12 +33,6 @@ module data_mem #(parameter N=32, MEM_SIZE = 1024)(
         if(WE) mem[A] <= WD;
     end
 
-    assign RD = rst ? {32{1'b0}} : mem[A];///////////
-
-    initial begin
-        //mem[28] = 32'h00000020;
-        //mem[40] = 32'h00000002;
-    end
-
+    assign RD = rst ? {32{1'b0}} : mem[A];
 
 endmodule

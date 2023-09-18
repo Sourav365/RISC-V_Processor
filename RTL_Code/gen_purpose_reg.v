@@ -37,16 +37,6 @@ module gen_purpose_reg #(parameter N=32)(
     assign RD1 = rst ? {32{1'b0}} : gpr[A1];
     assign RD2 = rst ? {32{1'b0}} : gpr[A2];
     
-//    initial gpr[9] = 32'h00000020;
-//    initial gpr[6] = 32'h00000040;
-    
-//    initial gpr[5] = 32'h00000005;
-//    initial gpr[6] = 32'h00000004;
-    
-    /*initial begin
-        Register[5] = 32'h00000005;
-        Register[6] = 32'h00000004;
-        
-    end*/
+    always @(posedge rst) gpr[0] <= 32'd0; //R0 always contains 0.
     
 endmodule
