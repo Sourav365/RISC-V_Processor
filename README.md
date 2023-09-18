@@ -173,11 +173,20 @@ It takes a 32-bit instruction address input, A, and reads the 32-bit data (i.e.,
    * Datamem[20] = 50
    * [x6] = 50
    * PC, Data write at GPR and data mem are dependds on clk.
-   * So, here all datas are available. Only Writing ar GPR happens at 1 clk.
+   * So, here all datas are available before (Combinational ckt). Only Writing at GPR happens at 1 clk.
 
 ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/65d59c8f-7442-45f9-a9bf-fc709d795d4e)
 
 
+## Test-2: ADDI x5, x0, 0x5 --> 0x00500293
+   * Imm = -4
+   * A1  = 9 (Source)
+   * A3  = 6 (Destination)
+   * Effective addr = [x9] - 4 = 24 - 4 = 20
+   * Datamem[20] = 50
+   * [x6] = 50
+   * PC, Data write at GPR and data mem are dependds on clk.
+   * So, here all datas are available before (Combinational ckt). Only Writing at GPR happens at 1 clk.
 
 
 
