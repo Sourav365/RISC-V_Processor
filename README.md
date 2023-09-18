@@ -169,8 +169,8 @@ It takes a 32-bit instruction address input, A, and reads the 32-bit data (i.e.,
    * A1  = 9 (Source)
    * A3  = 6 (Destination)
    * Effective addr = [x9] - 4 = 24 - 4 = 20
-   * Datamem[20] = 50
-   * [x6] = 50
+   * Data_mem[20] = 50
+   * [x6] = ? = 50 = Data_mem[20]
    * PC, Data write at GPR and data mem are dependds on clk.
    * So, here all datas are available before (Combinational ckt). Only Writing at GPR happens at 1 clk.
 
@@ -201,8 +201,23 @@ It takes a 32-bit instruction address input, A, and reads the 32-bit data (i.e.,
    * [x6] = 10
    * Data_mem[28] = ? = 10 = [x6]
    * PC, Data write at GPR and data mem are dependds on clk.
-   * So, here all datas are available before (Combinational ckt). Only Writing at GPR happens at 1 clk.
+   * So, here all datas are available before (Combinational ckt). Only Writing at Data_mem happens at 1 clk.
 
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/3444018f-a0ef-400f-988c-9ca0ac25a2ea)
+
+## Test-5: OR x4, x5, x6 --> 0x0062_E233
+   * A1  = 5 (Source-1)
+   * A2  = 6 (Source-2)
+   * A3  = 4 (Destination)
+   * [x5] = 6, [x6] = 10
+   * ALU_result = Result = 6 | 10 = 14
+   * [x4] = ? = 14
+   * 
+   * PC, Data write at GPR and data mem are dependds on clk.
+   * So, here all datas are available before (Combinational ckt). Only Writing at GPR happens at 1 clk.
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/cb686f91-2387-4d45-ba4e-702739f8cebe)
+
+     
 #### References:  
 1. [link1](https://github.com/merldsu/RISCV_Single_Cycle_Core/tree/main)
 2. [link2](https://github.com/merldsu/RISCV_Single_Cycle_Core/blob/main/doc/RISCV_Single_Cycle_Microarchitecture.pdf)
