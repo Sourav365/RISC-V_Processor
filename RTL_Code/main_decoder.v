@@ -26,10 +26,20 @@ module main_decoder(
     output [1:0] ImmSrc, ALUOp
     );
 
-    assign RegWrite  = (opcode == 7'b0000011 | opcode == 7'b0010011 | opcode == 7'b0110011) ? 1'b1 : 1'b0 ;
+    //RegWrite=1 --> when, LW(0000011), Other I-type(0010011), R-type(0110011) 
+    assign RegWrite  = (opcode == 7'b0000011 | opcode == 7'b0010011 | opcode == 7'b0110011) ? 1'b1 : 1'b0 ; 
+    
+    //ImmSrc= 01 --> S-type(0100011), 10 --> B-type(1100011), 00 --> I-type(0010011), xx --> R-type
+    //ImmSrc[0] ==> 1: S-type, 0: I-type
     assign ImmSrc    = (opcode == 7'b0100011) ? 2'b01 : (opcode == 7'b1100011) ? 2'b10 : 2'b00 ;
+
+    //ALUSrc=1 --> when, LW(0000011), Other I-type(0010011), S-type(0100011) => Where immediate data
     assign ALUSrc    = (opcode == 7'b0000011 | opcode == 7'b0100011 | opcode == 7'b0010011) ? 1'b1 : 1'b0 ;
+
+    //MemWrite=1 --> when S-type(0100011)
     assign MemWrite  = (opcode == 7'b0100011) ? 1'b1 : 1'b0 ;
+
+    //ResultSrc=1 --> when LW(0000011)
     assign ResultSrc = (opcode == 7'b0000011) ? 1'b1 : 1'b0 ;
     assign Branch    = (opcode == 7'b1100011) ? 1'b1 : 1'b0 ;
     assign ALUOp     = (opcode == 7'b0110011) ? 2'b10 : (opcode == 7'b1100011) ? 2'b01 : 2'b00 ;
