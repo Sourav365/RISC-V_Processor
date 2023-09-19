@@ -273,4 +273,5 @@ Content of "memfile.txt"
    ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/2d25a11f-898c-4f6b-b0ab-3ce5996aab26)
 
 ### 3. Routing
-   
+   ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/b72a6d00-010f-4e08-9450-13b9c1d7b9e3)
+
