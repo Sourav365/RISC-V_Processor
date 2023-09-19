@@ -253,4 +253,4 @@ Content of "memfile.txt"
 # Physical Design of RISC-V processor
 
 ## 1. Synthesis
-
+![gui_schematic](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/f8a6c941-a2bb-4ebd-bf2d-38ab7c7ec02a)
