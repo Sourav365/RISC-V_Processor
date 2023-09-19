@@ -41,7 +41,11 @@ module main_decoder(
 
     //ResultSrc=1 --> when LW(0000011)
     assign ResultSrc = (opcode == 7'b0000011) ? 1'b1 : 1'b0 ;
+
+    //Branch=1 --> when, B-type(1100011)
     assign Branch    = (opcode == 7'b1100011) ? 1'b1 : 1'b0 ;
+
+    //ALUOp = 10: R-type(0110011), 01: B-type(1100011), 00: LW, Other I-type, S-type
     assign ALUOp     = (opcode == 7'b0110011) ? 2'b10 : (opcode == 7'b1100011) ? 2'b01 : 2'b00 ;
 
 endmodule
