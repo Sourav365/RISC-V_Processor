@@ -258,3 +258,11 @@ Content of "memfile.txt"
 ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/7ee827ef-d261-40cf-b15c-61125b724458)
 
 ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/8dd4a3eb-a648-4189-8256-a02424fc7245)
+
+### Reports
+   * ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/345f0791-6664-4fcf-bc4a-3d7793e4ecf6)
+   * Slack = 10ps => (+)ve
+   * Area = 2787993.364 µm²
+
+
+
