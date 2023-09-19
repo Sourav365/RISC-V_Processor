@@ -254,3 +254,7 @@ Content of "memfile.txt"
 
 ## 1. Synthesis
 ![gui_schematic](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/f8a6c941-a2bb-4ebd-bf2d-38ab7c7ec02a)
+
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/7ee827ef-d261-40cf-b15c-61125b724458)
+
+![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/8dd4a3eb-a648-4189-8256-a02424fc7245)
