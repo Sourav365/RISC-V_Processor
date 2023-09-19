@@ -264,5 +264,11 @@ Content of "memfile.txt"
    * Slack = 10ps => (+)ve
    * Area = 2787993.364 µm²
 
+## 2. Layout
 
+### 1. Power Ring and strips
+   ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/2fe86d2c-5f76-4997-a59f-425f406de6d1)
 
+### 2. Std cell placement
+
+### 3. Routing
