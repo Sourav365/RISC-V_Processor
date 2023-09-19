@@ -38,7 +38,7 @@ module alu #(N=32)(
             3'b001: Result <= sum; //SUB
             3'b010: Result <= A & B; //AND
             3'b011: Result <= A | B; //OR
-            3'b101: Result <= {{31{1'b0}},(sum[31])}; //For SLT /////////////////
+            3'b101: Result <= {{31{1'b0}},(sum[31])}; //For SLT, ALUControl[0]=1 --> SUB. If less than, then result will be -ve. sum[31]=1 (SET)
             default:Result <= {32{1'b0}};
         endcase
     end
