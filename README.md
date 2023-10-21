@@ -243,12 +243,7 @@ Content of "memfile.txt"
 
 
 
-#### References:  
-1. [link1: GitHub](https://github.com/merldsu/RISCV_Single_Cycle_Core/tree/main)
-2. [link2: PDF](https://github.com/merldsu/RISCV_Single_Cycle_Core/blob/main/doc/RISCV_Single_Cycle_Microarchitecture.pdf)
-3. [link3: YouTube](https://www.youtube.com/playlist?list=PL5AmAh9QoSK7Fwk9vOJu-3VqBng_HjGFc)
-4. [link4: RISC-V Spec V2.2](https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf)
-5. [link5: Assembler](https://venus.cs61c.org/)
+
 
 
 # Physical Design of RISC-V processor
