@@ -242,32 +242,3 @@ Content of "memfile.txt"
 ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/0e184847-3784-4e11-b02f-5ed2fb7176b6)
 
 
-
-
-
-
-# Physical Design of RISC-V processor
-
-## 1. Synthesis
-![gui_schematic](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/f8a6c941-a2bb-4ebd-bf2d-38ab7c7ec02a)
-
-![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/7ee827ef-d261-40cf-b15c-61125b724458)
-
-![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/8dd4a3eb-a648-4189-8256-a02424fc7245)
-
-### Reports
-   * ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/345f0791-6664-4fcf-bc4a-3d7793e4ecf6)
-   * Slack = 10ps => (+)ve
-   * Area = 2787993.364 µm²
-
-## 2. Layout
-
-### 1. Power Ring and strips
-   ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/2fe86d2c-5f76-4997-a59f-425f406de6d1)
-
-### 2. Std cell placement
-   ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/2d25a11f-898c-4f6b-b0ab-3ce5996aab26)
-
-### 3. Routing
-   ![image](https://github.com/Sourav365/RISC-V_Processor/assets/49667585/b72a6d00-010f-4e08-9450-13b9c1d7b9e3)
-
